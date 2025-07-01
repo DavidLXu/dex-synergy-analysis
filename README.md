@@ -125,6 +125,7 @@ Dimensionality reduction through hand synergies is particularly valuable for:
 ```bibtex
 @software{dex_synergy_analysis,
   title={Dexterous Synergy Analysis},
+  author={Lixin Xu},
   year={2025},
   url={https://github.com/your-username/DexSynergyAnalysis}
 }
