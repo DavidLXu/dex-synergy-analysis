@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Recorded data files
+recorded_qpos_*.pkl
+# *.pkl
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webp
+*.png
+*.jpg
+*.jpeg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints
+
+# Data directories
+# data/
+recordings/
+videos/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.log
+
+.vscode
+.pyc
+*.blend
+cmake-build-debug
+/cmake-build-debug/
+/.ccls-cache/
+/.dir-locals.el
+.ini
+*.convex.*
+imgui.ini
+.mypy_cache

@@ -1,0 +1,58 @@
+retargeting:
+  type: vector
+  urdf_path: shadow_hand/shadow_hand_right.urdf
+
+  # Target refers to the retargeting target, which is the robot hand
+  target_origin_link_names: [ "palm", "palm", "palm", "palm", "palm", "palm", "palm", "palm", "palm", "palm" ]
+  target_task_link_names: [ "thtip", "fftip", "mftip", "rftip", "lftip",  "thmiddle", "ffmiddle", "mfmiddle", "rfmiddle", "lfmiddle" ]
+  scaling_factor: 1.2
+
+  # Source refers to the retargeting input, which usually corresponds to the human hand
+  # The joint indices of human hand joint which corresponds to each link in the target_link_names
+  target_link_human_indices: [ [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ], [ 4, 8, 12, 16, 20, 2, 6, 10, 14, 18 ] ]
+
+  # A smaller alpha means stronger filtering, i.e. more smooth but also larger latency
+  low_pass_alpha: 0.2
+
+  # This is the joint order used to drive simulation, must match the XML file
+  target_joint_names:
+    - "WRJ2"
+    - "WRJ1"
+    - "FFJ4"
+    - "FFJ3"
+    - "FFJ2"
+    - "MFJ4"
+    - "MFJ3"
+    - "MFJ2"
+    - "RFJ4"
+    - "RFJ3"
+    - "RFJ2"
+    - "LFJ5"
+    - "LFJ4"
+    - "LFJ3"
+    - "LFJ2"
+    - "THJ5"
+    - "THJ4"
+    - "THJ3"
+    - "THJ2"
+    - "THJ1"
+
+target_link_names:
+  - "palm"
+  - "ffknuckle"
+  - "ffproximal"
+  - "ffmiddle"
+  - "mfknuckle"
+  - "mfproximal"
+  - "mfmiddle"
+  - "rfknuckle"
+  - "rfproximal"
+  - "rfmiddle"
+  - "lfknuckle"
+  - "lfproximal"
+  - "lfmiddle"
+  - "thproximal"
+  - "thmiddle"
+  - "thdistal"
+  
+verbose: false 
