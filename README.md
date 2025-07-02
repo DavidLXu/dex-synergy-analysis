@@ -48,10 +48,22 @@ A pre-recorded and shadow hand retargeted data is provided in `data/recorded_sha
 ```bash
 python synergy_analysis/synergy_reconstruct.py --pkl-file data/recorded_shadow_qpos_retargeted.pkl --robot-name shadow --retargeting-type dexpilot --hand-type right --n-components 8
 ```
+Below is a side-by-side comparison of PCA reconstruction quality for the Shadow Hand using different numbers of principal components:
+In each gif, the left-side hand shows the original movement while the right-side hand shows the reconstructed movement.
+<table>
+  <tr>
+    <th>2 Principal Components</th>
+    <th>4 Principal Components</th>
+    <th>8 Principal Components</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="reconstruct_2.gif" alt="2 PCs" width="300"></td>
+    <td align="center"><img src="reconstruct_4.gif" alt="4 PCs" width="300"></td>
+    <td align="center"><img src="reconstruct.gif" alt="8 PCs" width="300"></td>
+  </tr>
+</table>
 
-![Shadow Hand PCA Reconstruction Demo](reconstruct.gif)
-
-> **Takeaway:** For a 22-DOF Shadow Hand, using **8 principal components** is typically sufficient to reconstruct hand movement patterns with high fidelity.
+> **Takeaway:** As the number of principal components increases, the reconstructed hand motion more closely matches the original. For a 22-DOF Shadow Hand, using **8 principal components** is typically sufficient to reconstruct hand movement patterns with high fidelity.
 
 
 ### 4. Explore Components
