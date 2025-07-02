@@ -49,7 +49,9 @@ A pre-recorded and shadow hand retargeted data is provided in `data/recorded_sha
 python synergy_analysis/synergy_reconstruct.py --pkl-file data/recorded_shadow_qpos_retargeted.pkl --robot-name shadow --retargeting-type dexpilot --hand-type right --n-components 8
 ```
 Below is a side-by-side comparison of PCA reconstruction quality for the Shadow Hand using different numbers of principal components:
-In each gif, the left-side hand shows the original movement while the right-side hand shows the reconstructed movement.
+
+(left-side hand: original movement; 
+right-side hand: reconstructed movement.)
 <table>
   <tr>
     <th>2 Principal Components</th>
